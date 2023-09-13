@@ -70,7 +70,7 @@ def configcell_text_and_colors(
         # text to ADD
         font_prop = fm.FontProperties(weight="bold", size=fz)
         text_kwargs = dict(
-            color="w",
+            color="k",
             ha="center",
             va="center",
             gid="sum",
@@ -119,7 +119,7 @@ def configcell_text_and_colors(
         # main diagonal
         if col == lin:
             # set color of the textin the diagonal to white
-            oText.set_color("w")
+            oText.set_color("k")
             # set background color in the diagonal to blue
             facecolors[posi] = [0.35, 0.8, 0.55, 1.0]
         else:
@@ -187,7 +187,7 @@ def pp_matrix(
         ax=ax1,
         cbar=cbar,
         cmap=cmap,
-        linecolor="w",
+        linecolor="k",
         fmt=fmt,
     )
 
