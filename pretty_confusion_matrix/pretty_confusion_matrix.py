@@ -76,18 +76,18 @@ def configcell_text_and_colors(
             gid="sum",
             fontproperties=font_prop,
         )
-        lis_txt = ["%d" % (cell_val), per_ok_s, "%.2f%%" % (per_err)]
+        lis_txt = ["%d" % (cell_val), per_ok_s] #, "%.2f%%" % (per_err)]
         lis_kwa = [text_kwargs]
         dic = text_kwargs.copy()
         dic["color"] = "g"
         lis_kwa.append(dic)
         dic = text_kwargs.copy()
-        dic["color"] = "r"
-        lis_kwa.append(dic)
+        # dic["color"] = "r"
+        # lis_kwa.append(dic)
         lis_pos = [
-            (oText._x, oText._y - 0.3),
-            (oText._x, oText._y),
-            (oText._x, oText._y + 0.3),
+            (oText._x, oText._y - 0.2),
+            # (oText._x, oText._y),
+            (oText._x, oText._y + 0.2),
         ]
         for i in range(len(lis_txt)):
             newText = dict(
