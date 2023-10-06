@@ -85,9 +85,9 @@ def configcell_text_and_colors(
         # dic["color"] = "r"
         # lis_kwa.append(dic)
         lis_pos = [
-            (oText._x, oText._y - 0.2),
+            (oText._x, oText._y - 0.1),
             # (oText._x, oText._y),
-            (oText._x, oText._y + 0.2),
+            (oText._x, oText._y + 0.1),
         ]
         for i in range(len(lis_txt)):
             newText = dict(
